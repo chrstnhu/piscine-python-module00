@@ -15,13 +15,14 @@ MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
                     '7':'--...', '8':'---..', '9':'----.',
                     '0':'-----', ' ': '/'}
 
-if len(sys.argv) > 1:
+# Convert string to morse
+def convertToMorse():
     message = sys.argv[1]
 
     # Merge into one string
     for i in range(2, len(sys.argv)) :
         message += " " + sys.argv[i]
-    
+        
     # Convert string to morse code
     morse_code = ""
     for char in message.upper():
@@ -32,5 +33,10 @@ if len(sys.argv) > 1:
             sys.exit()
     print(morse_code)
 
-else :
-    print("Usage : python3 sos.py [string]")
+# Main
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+       convertToMorse()
+    else :
+        print("Usage : python3 sos.py [string]")
+    
