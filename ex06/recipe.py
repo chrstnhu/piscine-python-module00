@@ -139,19 +139,19 @@ if __name__ == "__main__":
     print("Welcome to the Python Cookbook !")
     printOption()
     while True:
-            print("\nPlease select an option: ")
-            option = input(">> ")
-            if option == '1':
-                addRecipe()
-            elif option == '2':
-                deleteRecipe()
-            elif option == '3':
-                printDetails()
-            elif option == '4':
-                printRecipeName()
-            elif option == '5':
-                print("Cookbook closed. Goodbye !")
-                break
-            else:
-                print("Sorry, this option does not exist.")
-                printOption()
+        print("\nPlease select an option: ")
+        option = input(">> ")
+        if option == '1':
+            addRecipe()
+        elif option == '2':
+            deleteRecipe()
+        elif option == '3':
+            printDetails()
+        elif option == '4':
+            printRecipeName()
+        elif option == '5':
+            print("Cookbook closed. Goodbye !")
+            break
+        else:
+            print("Sorry, this option does not exist.")
+            printOption()
